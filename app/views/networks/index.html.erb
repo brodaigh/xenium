@@ -20,8 +20,8 @@
 			<td><%=h network.netmask %></td>
 			<td><%=link_to h(network.ips.count), network_ips_path(network) %></td>
 			<td><%=h network.remaining_ips %></td>
-			<td class="actions"><%= link_to image_tag('/images/Edit.png', :alt => "Edit", :title => "Edit"), edit_network_path(network) %></td>
-			<td class="actions"><%= link_to image_tag('/images/destroy.png', :alt => "Destroy", :title => "Destroy"), network, :confirm => "Are you sure you want to delete network #{network.name}?", :method => :delete %></td>
+			<td class="actions"><%= link_to image_tag('/images/pencil.png', :alt => "Edit", :title => "Edit"), edit_network_path(network) %></td>
+			<td class="actions"><%= link_to image_tag('/images/delete.gif', :alt => "Destroy", :title => "Destroy"), network, :confirm => "Are you sure you want to delete network #{network.name}?", :method => :delete %></td>
 		</tr>
     </tbody>
 	<% end %>
